@@ -101,13 +101,33 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
  body.print-one .qrc:not(.pick){display:none!important}
  body.print-one .qrc.pick{page-break-after:auto;break-after:auto}
 }
+
+.sheet{display:none;padding:0!important;border:0!important}
+@media print{
+ body[data-ps] .qrc{display:none!important}
+ body[data-ps="m"] #sheetMain,body[data-ps="a"] #sheetAll{display:block;width:100%;max-width:210mm;height:296mm;overflow:hidden;background:#fff;color:#111;page-break-after:auto}
+ .sh-in{height:100%;width:100%;margin:0;padding:10mm 12mm;border:3mm solid #111;border-radius:8mm;display:flex;flex-direction:column;text-align:center;box-sizing:border-box}
+ .sh-brand{font-size:15pt;font-weight:900;letter-spacing:.16em;color:#B8821A}
+ .sh-title{font-size:27pt;line-height:1.25;margin:4mm 0 3mm;color:#111;letter-spacing:-.02em}
+ .sh-sub{font-size:13pt;line-height:1.6;color:#444;margin:0 0 5mm}
+ .sh-pts{display:flex;justify-content:center;gap:3mm;flex-wrap:wrap;margin-bottom:6mm}.sh-pts span{border:.4mm solid #B8821A;color:#8A5F0E;font-weight:800;font-size:11pt;padding:1.5mm 4mm;border-radius:99mm}
+ .sh-grid{flex:1;display:grid;gap:5mm;align-content:center}
+ .m .sh-grid{grid-template-columns:1fr;gap:4mm}.m .sc{display:grid;grid-template-columns:1fr 50mm;grid-template-areas:"ko qr" "en qr" "url qr";align-content:center;align-items:center;text-align:left;padding:3mm 9mm;column-gap:8mm}.m .sc-ko{grid-area:ko;align-self:end;font-size:25pt!important}.m .sc-en{grid-area:en;font-size:10pt!important;margin-top:2mm}.m .sc-url{grid-area:url;align-self:start;font-size:12pt!important;margin-top:4mm}.m .sc-qr{grid-area:qr;width:50mm!important;margin:0!important}.a .sh-grid{grid-template-columns:repeat(3,1fr);gap:3mm}
+ .sc{border:.4mm solid #ccc;border-radius:4mm;padding:3mm 2mm;display:flex;flex-direction:column;align-items:center;justify-content:center}
+ .sc-ko{font-weight:900;color:#111}.sc-en{color:#666;letter-spacing:.08em;font-weight:700}.sc-url{color:#111;font-weight:700}
+ .sc-qr{background:#fff;line-height:0}.sc-qr img{width:100%;height:auto}
+ .m .sc-ko{font-size:17pt}.m .sc-en{font-size:8pt}.m .sc-qr{width:48mm;margin:4mm 0 3mm}.m .sc-url{font-size:9pt}
+ .a .sc-ko{font-size:12pt}.a .sc-en{font-size:6.5pt}.a .sc-qr{width:36mm;margin:1.5mm 0 1mm}.a .sc-url{font-size:7.5pt}
+ .a .sc:nth-child(-n+3){background:#FBF5E8;border-color:#B8821A}.a .sc:nth-child(-n+3) .sc-ko{font-size:14pt}
+ .sh-foot{margin-top:5mm;font-size:11pt;line-height:1.7;color:#333}.sh-foot b{font-size:14pt;color:#111}
+}
 </style>
 </head>
 <body>
 <nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><span class="nav-dd"><a href="/partner/">파트너 모집</a><div class="dd-menu"><a href="/partner/store/">🏪 매장 · 상점<small>음식점 · 카페 · 간식 · 굿즈 · 짐보관 · 숙박</small></a><a href="/partner/agency/">🎤 공연장 · 기획사<small>공연 등록 · 공식 공지 · 현장 안내</small></a><a href="/partner/collab/">🤝 지역기관 · 기업 · 협업<small>상권 연계 · 후원 · 콘텐츠 협업</small></a><a class="dd-all" href="/partner/">파트너 모집 전체 보기 ›</a></div></span><a href="/live/">쇼데이 라이브</a><a href="/50plus/">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a class="active" href="/qr/">QR</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-apply">제휴·사업 문의 ›</a></div></nav>
 <main class="qrpage"><div class="tag">PARTNER QR</div><h1>파트너 유형별 QR 코드</h1>
 <p class="lead">유형별 QR을 스캔하면 해당 파트너 제안 페이지로 연결됩니다. 아래 버튼으로 A4 전단지(유형당 1장)를 바로 인쇄할 수 있어요. 인쇄 설정에서 「배경 그래픽」을 켜면 더 선명합니다.</p>
-<div class="qrbar noprint"><button type="button" class="pri" id="printAll">전체 전단지 인쇄 (A4 · 9장)</button><button type="button" id="printMain">대표 3종만 인쇄 (3장)</button></div>
+<div class="qrbar noprint"><button type="button" class="pri" id="printAll">전체 전단지 인쇄 (A4 · 9장)</button><button type="button" id="printMain">대표 3종만 인쇄 (3장)</button><button type="button" class="pri" id="sheetAllB">전체 한 장 인쇄 (A4 · 1장)</button><button type="button" id="sheetMainB">대표 3종 한 장 인쇄 (A4 · 1장)</button></div>
 <h3 class="grp">대표 유형</h3><p class="grp-sub">매장 · 공연장/기획사 · 지역기관/기업</p>
 <div class="qrgrid"><article class="qrc main" id="store">
 <div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
@@ -183,9 +203,24 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 <p class="qrc-desc">지방 관객 숙박 · 지역 관광 연계</p>
 <div class="qrc-url">info.showday.kr/go/stay/</div><div class="qrc-free">신청은 무료입니다</div></div>
 <div class="qrc-act noprint"><button type="button" data-print="stay">이 전단지만 인쇄</button><a href="/assets/qr/qr-stay.png" download="showday-qr-stay.png">PNG 저장</a></div>
-</article></div></main>
+</article></div><section class="sheet m" id="sheetMain" aria-hidden="true"><div class="sh-in">
+<div class="sh-brand">SHOWDAY 파트너 모집</div>
+<h2 class="sh-title">공연 가는 날,<br>필요한 모든 것을 함께 채워 주세요</h2>
+<p class="sh-sub">공연을 찾는 곳에서, 공연 가는 하루를 연결하는 곳으로.<br>공연장 주변 매장 · 공연장/기획사 · 지역기관/기업 파트너를 모십니다.</p>
+<div class="sh-pts"><span>신청 무료</span><span>스마트폰 QR 스캔으로 바로 제안 확인</span><span>대표 3개 유형</span></div>
+<div class="sh-grid"><div class="sc"><div class="sc-ko">매장 · 상점</div><div class="sc-en">LOCAL STORES</div><div class="sc-qr"><img src="/assets/qr/qr-store.svg" alt="매장 · 상점 QR"></div><div class="sc-url">info.showday.kr/go/store/</div></div><div class="sc"><div class="sc-ko">공연장 · 기획사</div><div class="sc-en">VENUES & AGENCIES</div><div class="sc-qr"><img src="/assets/qr/qr-agency.svg" alt="공연장 · 기획사 QR"></div><div class="sc-url">info.showday.kr/go/agency/</div></div><div class="sc"><div class="sc-ko">지역기관 · 기업 · 협업</div><div class="sc-en">REGIONAL · CORPORATE · COLLAB</div><div class="sc-qr"><img src="/assets/qr/qr-collab.svg" alt="지역기관 · 기업 · 협업 QR"></div><div class="sc-url">info.showday.kr/go/collab/</div></div></div>
+<div class="sh-foot"><b>스마트폰 카메라로 해당 QR을 스캔하세요</b><br>문의 · 카카오톡 채널 pf.kakao.com/_SnjrX · info.showday.kr</div></div></section><section class="sheet a" id="sheetAll" aria-hidden="true"><div class="sh-in">
+<div class="sh-brand">SHOWDAY 파트너 모집</div>
+<h2 class="sh-title">공연 가는 날,<br>필요한 모든 것을 함께 채워 주세요</h2>
+<p class="sh-sub">공연을 찾는 곳에서, 공연 가는 하루를 연결하는 곳으로.<br>공연장 주변 매장 · 공연장/기획사 · 지역기관/기업 파트너를 모십니다.</p>
+<div class="sh-pts"><span>신청 무료</span><span>스마트폰 QR 스캔으로 바로 제안 확인</span><span>전체 9개 유형</span></div>
+<div class="sh-grid"><div class="sc"><div class="sc-ko">매장 · 상점</div><div class="sc-en">LOCAL STORES</div><div class="sc-qr"><img src="/assets/qr/qr-store.svg" alt="매장 · 상점 QR"></div><div class="sc-url">info.showday.kr/go/store/</div></div><div class="sc"><div class="sc-ko">공연장 · 기획사</div><div class="sc-en">VENUES & AGENCIES</div><div class="sc-qr"><img src="/assets/qr/qr-agency.svg" alt="공연장 · 기획사 QR"></div><div class="sc-url">info.showday.kr/go/agency/</div></div><div class="sc"><div class="sc-ko">지역기관 · 기업 · 협업</div><div class="sc-en">REGIONAL · CORPORATE · COLLAB</div><div class="sc-qr"><img src="/assets/qr/qr-collab.svg" alt="지역기관 · 기업 · 협업 QR"></div><div class="sc-url">info.showday.kr/go/collab/</div></div><div class="sc"><div class="sc-ko">음식점</div><div class="sc-en">RESTAURANTS</div><div class="sc-qr"><img src="/assets/qr/qr-food.svg" alt="음식점 QR"></div><div class="sc-url">info.showday.kr/go/food/</div></div><div class="sc"><div class="sc-ko">카페 · 음료</div><div class="sc-en">CAFES & DRINKS</div><div class="sc-qr"><img src="/assets/qr/qr-cafe.svg" alt="카페 · 음료 QR"></div><div class="sc-url">info.showday.kr/go/cafe/</div></div><div class="sc"><div class="sc-ko">간식 · 도시락</div><div class="sc-en">SNACKS & LUNCHBOXES</div><div class="sc-qr"><img src="/assets/qr/qr-snack.svg" alt="간식 · 도시락 QR"></div><div class="sc-url">info.showday.kr/go/snack/</div></div><div class="sc"><div class="sc-ko">굿즈 · 브랜드</div><div class="sc-en">GOODS & BRANDS</div><div class="sc-qr"><img src="/assets/qr/qr-goods.svg" alt="굿즈 · 브랜드 QR"></div><div class="sc-url">info.showday.kr/go/goods/</div></div><div class="sc"><div class="sc-ko">짐보관 · 편의</div><div class="sc-en">LOCKERS & CONVENIENCE</div><div class="sc-qr"><img src="/assets/qr/qr-locker.svg" alt="짐보관 · 편의 QR"></div><div class="sc-url">info.showday.kr/go/locker/</div></div><div class="sc"><div class="sc-ko">숙박 · 관광</div><div class="sc-en">STAY & TOURISM</div><div class="sc-qr"><img src="/assets/qr/qr-stay.svg" alt="숙박 · 관광 QR"></div><div class="sc-url">info.showday.kr/go/stay/</div></div></div>
+<div class="sh-foot"><b>스마트폰 카메라로 해당 QR을 스캔하세요</b><br>문의 · 카카오톡 채널 pf.kakao.com/_SnjrX · info.showday.kr</div></div></section></main>
 <script>(function(){var B=document.body;function go(sel){document.querySelectorAll(".qrc").forEach(function(c){c.classList.toggle("pick",!sel||sel.indexOf(c.id)>-1)});B.classList.toggle("print-one",!!sel);window.print()}
 window.addEventListener("afterprint",function(){B.classList.remove("print-one")});
+function sh(k){B.setAttribute("data-ps",k);window.print()}
+window.addEventListener("afterprint",function(){B.removeAttribute("data-ps")});
+document.getElementById("sheetAllB").onclick=function(){sh("a")};document.getElementById("sheetMainB").onclick=function(){sh("m")};
 document.getElementById("printAll").onclick=function(){go(null)};
 document.getElementById("printMain").onclick=function(){go(["store","agency","collab"])};
 document.querySelectorAll("[data-print]").forEach(function(b){b.onclick=function(){go([b.dataset.print])}})})();</script>
