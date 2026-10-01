@@ -424,6 +424,82 @@ img{-webkit-user-drag:none;user-drag:none}
 body{-webkit-touch-callout:none}
 input,textarea,select{-webkit-user-select:text;user-select:text}
 </style>
+
+<style>
+.ecosystem{padding:92px 0;background:#0d0f14}.eco-head{max-width:850px;margin-bottom:34px}.eco-head .eyebrow{color:var(--amber);font-size:12px;font-weight:800;letter-spacing:.16em}.eco-head h2{font-size:clamp(34px,5vw,62px);line-height:1.05;margin:10px 0 18px}.eco-head p{color:var(--muted);font-size:18px;line-height:1.75}.eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.eco-card{display:flex;min-height:260px;flex-direction:column;justify-content:space-between;padding:28px;border:1px solid var(--line);border-radius:24px;background:#13161d;text-decoration:none;color:var(--text);transition:.2s}.eco-card:hover{transform:translateY(-4px);border-color:#7b6338}.eco-card .num{color:var(--amber);font-size:12px;font-weight:800;letter-spacing:.12em}.eco-card h3{font-size:25px;margin:12px 0}.eco-card p{color:var(--muted);line-height:1.65}.eco-card .url{font-size:13px;color:#fff;opacity:.8}.eco-card .go{margin-top:20px;color:var(--amber);font-weight:800}.vision-band{padding:92px 0;background:#f3efe6;color:#151515}.vision-band .section-head p{color:#625e56}.vision-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:34px}.vision-step{background:#fff;border:1px solid #ddd5c6;border-radius:18px;padding:22px;min-height:190px}.vision-step b{display:block;font-size:12px;color:#9a6a10;letter-spacing:.1em;margin-bottom:12px}.vision-step h3{font-size:20px;margin:0 0 9px}.vision-step p{font-size:14px;line-height:1.6;color:#6b655c}.audience{padding:86px 0;background:#101219}.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.aud-card{padding:24px;border:1px solid var(--line);border-radius:18px;background:#151820}.aud-card strong{font-size:18px}.aud-card p{color:var(--muted);font-size:14px;line-height:1.65}.live-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.live-links a{padding:11px 15px;border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-size:13px;font-weight:700}.live-links a:first-child{background:var(--amber);color:#17120a;border-color:var(--amber)}
+@media(max-width:900px){.eco-grid,.aud-grid{grid-template-columns:1fr 1fr}.vision-flow{grid-template-columns:1fr 1fr}.vision-step:last-child{grid-column:1/-1}}@media(max-width:620px){.eco-grid,.aud-grid,.vision-flow{grid-template-columns:1fr}.vision-step:last-child{grid-column:auto}.ecosystem,.vision-band,.audience{padding:64px 0}}
+</style>
+
+<style>
+.service-now{padding:88px 0;background:#fff;color:#171717}
+.service-now .section-head h2{color:#171717}
+.service-now .section-head p{color:#4a4a4a}
+.service-now .eyebrow{color:#b85f00}
+.service-now-card{color:#202020}
+.service-now-card b{color:#202020;font-weight:800}
+.service-now-card p{color:#4b4b4b !important}
+.case-note{color:#414141 !important}
+.vision-band .section-head h2{color:#171717}
+.vision-band .section-head p{color:#514d46}
+.vision-step h3{color:#202020}
+.vision-step p{color:#514d46}
+.service-now{padding:88px 0;background:#fff}.service-now-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}.service-now-card{border:1px solid #e8e8e8;border-radius:18px;padding:24px;background:#fff}.service-now-card b{display:block;font-size:18px;margin-bottom:9px}.service-now-card p{margin:0;color:#666;line-height:1.65;font-size:14px}.service-now-card em{display:block;color:#d87800;font-style:normal;font-size:12px;font-weight:800;letter-spacing:.08em;margin-bottom:12px}.case-note{margin-top:24px;padding:18px 22px;border-radius:14px;background:#f7f5f1;color:#555;line-height:1.65}.case-note strong{color:#111}.case-note a{color:#b96500;font-weight:800}.map-product{padding:88px 0;background:#111;color:#fff}.map-product .section-head p{color:#aaa}.map-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.map-flow div{border:1px solid #333;border-radius:18px;padding:24px}.map-flow b{color:#ffb64d}.map-flow h3{font-size:21px;margin:8px 0}.map-flow p{color:#aaa;line-height:1.65;margin:0}.map-cta{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}.map-cta a{padding:12px 18px;border-radius:999px;background:#fff;color:#111;font-weight:800;text-decoration:none}.map-cta a.alt{background:#222;color:#fff;border:1px solid #444}@media(max-width:850px){.service-now-grid{grid-template-columns:1fr 1fr}.map-flow{grid-template-columns:1fr}}@media(max-width:560px){.service-now-grid{grid-template-columns:1fr}}
+
+/* 2026-10-01 readability & spacing refinement */
+.service-now .section-head{max-width:940px;margin-bottom:42px}
+.service-now .section-head h2{
+  font-size:clamp(38px,3.4vw,50px) !important;
+  line-height:1.22 !important;
+  letter-spacing:-.035em;
+  color:#151515 !important;
+  margin-bottom:22px;
+  word-break:keep-all;
+}
+.service-now .section-head p{
+  max-width:900px;
+  font-size:18px !important;
+  line-height:1.9 !important;
+  letter-spacing:-.015em;
+  color:#3f3f3f !important;
+  word-break:keep-all;
+}
+.service-now .section-head p br{display:block;content:"";margin-top:4px}
+.service-now-card{padding:28px 24px;min-width:0}
+.service-now-card em{font-size:13px;line-height:1.4;margin-bottom:14px}
+.service-now-card b{
+  font-size:20px !important;
+  line-height:1.35;
+  margin-bottom:12px;
+  color:#1b1b1b !important;
+  word-break:keep-all;
+}
+.service-now-card p{
+  font-size:15.5px !important;
+  line-height:1.78 !important;
+  color:#3f3f3f !important;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+.case-note{font-size:16px;line-height:1.8;padding:20px 24px;word-break:keep-all}
+/* Raise small body copy across the information page without breaking cards */
+.vision-step p,.aud-card p,.map-flow p{font-size:15px;line-height:1.72;word-break:keep-all}
+.vision-step h3,.map-flow h3{line-height:1.35;word-break:keep-all}
+.aud-card strong{font-size:19px;line-height:1.4}
+@media(max-width:1100px){
+  .service-now-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .service-now{padding:64px 0}
+  .service-now .section-head{margin-bottom:30px}
+  .service-now .section-head h2{font-size:clamp(31px,9vw,40px) !important;line-height:1.25 !important}
+  .service-now .section-head p{font-size:17px !important;line-height:1.82 !important}
+  .service-now-grid{grid-template-columns:1fr;gap:12px}
+  .service-now-card{padding:23px 20px}
+  .service-now-card b{font-size:19px !important}
+  .service-now-card p{font-size:15.5px !important}
+  .case-note{font-size:15.5px;padding:18px 20px}
+}
+</style>
 </head>
 <body id="top">
 
@@ -431,14 +507,14 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
   <div class="navrow">
     <a class="brand" href="#top" aria-label="SHOWDAY 맨 위로"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a>
     <div class="nav-links">
-      <a href="#journey">서비스 소개</a>
-      <a href="/50plus/">50+ 공연</a>
-      <a href="/parents/">부모를 위한 공연</a>
+      <a href="#ecosystem">SHOWDAY 소개</a>
+      <a href="/50plus/">50+ CULTURE</a>
+      <a href="/parents/">PARENTS TIME</a>
       <a href="/live/">SHOWDAY LIVE</a>
       <a href="#partner">파트너</a>
       <a href="#partner-contact">제휴 문의</a>
     </div>
-    <a class="btn btn-amber btn-sm nav-cta" href="#waitlist">오픈 알림 신청 <span>›</span></a>
+    <a class="btn btn-amber btn-sm nav-cta" href="#partner-contact">제휴 · 사업 문의 <span>›</span></a>
   </div>
 </nav>
 
@@ -451,15 +527,15 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
   <div class="wrap hero-grid">
     <div>
       <span class="hero-kicker">PERFORMANCE DAY PLATFORM</span>
-      <h1 class="headline">공연 가는 날,<br><span class="headline-accent">필요한 모든 것.</span></h1>
-      <p class="lede">SHOWDAY는 공연정보만 보여주는 서비스가 아닙니다. 공연을 준비하는 순간부터 공연이 끝나고 돌아가는 시간까지, 관객과 동행자에게 필요한 경험을 하나로 연결합니다.</p>
+      <h1 class="headline">공연을 찾는 곳에서,<br><span class="headline-accent">공연 가는 하루를 연결하는 곳으로.</span></h1>
+      <p class="lede">SHOWDAY는 공연·전시·축제·체험을 발견하는 순간부터 공연 당일의 이동·현장 정보·주변 편의·관객 소통·귀가까지 연결하는 공연·문화생활 플랫폼입니다.</p>
       <div class="hero-sub">
         <span>공연 전 · 준비와 이동</span>
         <span>공연 중 · 관객과 동행자</span>
         <span>공연 후 · 귀가와 지역 체류</span>
       </div>
       <div class="hero-ctas">
-        <a class="btn btn-amber" href="#journey">SHOWDAY 알아보기 <span>›</span></a>
+        <a class="btn btn-amber" href="#ecosystem">SHOWDAY 한눈에 보기 <span>›</span></a>
         <a class="btn btn-line" href="#showday-original">3가지 사업 보기</a>
       </div>
       <p class="hero-note"><strong>티켓을 파는 플랫폼보다, 공연 가는 하루를 연결하는 플랫폼.</strong></p>
@@ -471,34 +547,40 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
         <p class="ticket-line">공연 전부터 귀가까지,<br>하루의 흐름을 연결합니다.</p>
         <div class="ticket-perf"></div>
         <div class="ticket-barcode"></div>
-        <p class="ticket-foot">BEFORE · LIVE · AFTER</p>
+        <p class="ticket-foot">DISCOVER · GO · LIVE · AROUND · AFTER</p>
       </div>
     </div>
   </div>
-  <p class="hero-caption">SHOWDAY는 공연 전·중·후의 경험을 하나의 흐름으로 연결하는 서비스를 준비하고 있습니다.</p>
+  <p class="hero-caption">SHOWDAY는 공연을 발견하는 순간부터 공연 당일 현장과 귀가까지 하나의 흐름으로 연결합니다.</p>
 </section>
 
+<section class="ecosystem" id="ecosystem"><div class="wrap"><div class="eco-head"><div class="eyebrow">ONE SHOWDAY · THREE EXPERIENCES</div><h2>공연을 찾는 순간부터,<br>공연이 끝난 뒤까지.</h2><p>SHOWDAY는 하나의 사이트에 모든 기능을 억지로 넣지 않습니다. 전국의 공연·문화생활을 찾는 서비스, 각 공연장과 주변 지역에서 공연 가는 하루를 돕는 현장 서비스, 그리고 브랜드와 사업 방향을 설명하는 소개 사이트를 역할별로 연결합니다.</p></div><div class="eco-grid"><a class="eco-card" href="https://showday.kr/" target="_blank" rel="noopener"><div><span class="num">01 · DISCOVER</span><h3>SHOWDAY</h3><p>공연·전시·축제·체험을 누구와, 언제, 어디서 갈지 기준으로 좁히고 내 주변 문화생활까지 찾습니다.</p></div><div><span class="url">showday.kr</span><div class="go">실제 서비스 보기 →</div></div></a><a class="eco-card" href="#service-now"><div><span class="num">02 · PERFORMANCE DAY</span><h3>공연 가는 날</h3><p>공연장별 교통·주차·식사·짐보관뿐 아니라 혼잡 제보·게이트·MD·화장실·주변 편의와 주문·픽업을 공연 당일에 연결합니다.</p></div><div><span class="url">공연장별 서비스로 확장</span><div class="go">공연 가는 날 서비스 보기 ↓</div></div></a><a class="eco-card" href="#vision"><div><span class="num">03 · BRAND & BUSINESS</span><h3>SHOWDAY INFO</h3><p>관객, 공연 관계자, 지역 파트너, 기관이 SHOWDAY의 현재 서비스와 확장 방향을 한눈에 이해하는 공식 소개 공간입니다.</p></div><div><span class="url">info.showday.kr</span><div class="go">비전과 사업 구조 보기 ↓</div></div></a></div></div></section>
+<section class="vision-band" id="vision"><div class="wrap"><div class="section-head"><div class="eyebrow">WHERE SHOWDAY IS GOING</div><h2>검색 서비스에서 끝나지 않고,<br>‘공연 가는 하루’의 운영체계로.</h2><p>SHOWDAY가 지향하는 방향은 티켓 정보의 양을 늘리는 것이 아니라 관객의 실제 행동 흐름을 연결하는 것입니다.</p></div><div class="vision-flow"><div class="vision-step"><b>01 DISCOVER</b><h3>발견</h3><p>공연·전시·축제·체험, 무료 일정과 내 주변 콘텐츠를 상황에 맞게 발견합니다.</p></div><div class="vision-step"><b>02 DECIDE</b><h3>선택</h3><p>누구와·언제·거리·가격·시간을 기준으로 선택의 부담을 줄입니다.</p></div><div class="vision-step"><b>03 PLAN</b><h3>준비</h3><p>공연시간, 이동, 동행자, 식사와 대기시간 등 공연 전 준비를 연결합니다.</p></div><div class="vision-step"><b>04 LIVE</b><h3>현장 소통</h3><p>입장·MD·주차·화장실 혼잡과 공연 지연 같은 현장 정보를 짧은 제보 중심으로 함께 확인합니다.</p></div><div class="vision-step"><b>05 AROUND & AFTER</b><h3>주변과 귀가</h3><p>먹거리·카페·짐보관·미리주문·픽업과 공연 후 귀가까지 연결해 공연장의 하루를 지역 경험으로 확장합니다.</p></div></div></div></section>
+<section class="audience"><div class="wrap"><div class="section-head"><div class="eyebrow">FOR EVERY SIDE OF PERFORMANCE DAY</div><h2>관객만 보는 플랫폼이 아닙니다.</h2><p>공연을 중심으로 움직이는 사람과 지역을 하나의 생태계로 연결합니다.</p></div><div class="aud-grid"><div class="aud-card"><strong>관객</strong><p>무엇을 볼지 찾고, 공연일의 이동과 주변 시간을 더 편하게 계획합니다.</p></div><div class="aud-card"><strong>동행자 · 50+</strong><p>부모님과의 문화생활, 기다리는 가족, 50+ 맞춤 콘텐츠처럼 놓치기 쉬운 수요를 별도로 설계합니다.</p></div><div class="aud-card"><strong>공연 관계자</strong><p>공연 등록과 관객 접점을 넓히고, 공연 전후 경험까지 이어지는 새로운 유입 경로를 만듭니다.</p></div><div class="aud-card"><strong>지역 · 파트너</strong><p>식당·카페·상점·숙박·문화공간과 기관을 공연일의 실제 방문 흐름에 연결합니다.</p></div></div><div class="live-links"><a href="https://showday.kr/" target="_blank" rel="noopener">SHOWDAY 이용하기 ↗</a><a href="#journey">공연 가는 날 서비스 ↓</a><a href="#partner">파트너 참여</a></div></div></section>
+
+<section class="service-now" id="service-now"><div class="wrap"><div class="section-head"><div class="eyebrow">SHOWDAY TODAY</div><h2>지금 SHOWDAY가 만드는 것은<br>‘공연 검색’보다 큰 경험입니다.</h2><p>현재 서비스의 강점은 많은 정보를 한곳에 모으는 데서 끝나지 않습니다.<br>관객이 실제로 선택하고 움직이는 순서에 맞춰 기능을 재구성합니다.</p></div><div class="service-now-grid"><div class="service-now-card"><em>01 · DISCOVER</em><b>나에게 맞는 문화생활</b><p>누구와·언제·어디서·무엇을 볼지로 공연·전시·축제·체험과 무료 일정을 빠르게 좁힙니다.</p></div><div class="service-now-card"><em>02 · NEARBY</em><b>내 주변에서 바로 찾기</b><p>목록과 지도를 오가며 현재 위치 또는 관심 지역의 공연·문화행사를 거리와 일정 기준으로 찾습니다.</p></div><div class="service-now-card"><em>03 · FOLLOW</em><b>관심 공연과 아티스트</b><p>관심 공연·티켓 정보·아티스트 소식을 한 흐름으로 연결해 다시 찾는 서비스를 만듭니다.</p></div><div class="service-now-card"><em>04 · SHOWDAY LIVE</em><b>모바일 공연 당일 모드</b><p>공연 3~4시간 전부터 입장·MD·주차·화장실 혼잡, 현장 제보, 주변 편의, 미리주문·픽업과 귀가까지 모바일 중심으로 연결합니다.</p></div></div><div class="case-note"><strong>SHOWDAY LIVE는 특정 아레나를 위한 서비스가 아닙니다.</strong> 서울아레나는 초기 적용 사례이며, 이후 대형 공연장·콘서트홀·뮤지컬·연극 공연장·지역 공연장·축제장 등으로 같은 구조를 확장합니다. <a href="https://seoularena.showday.kr/" target="_blank" rel="noopener">서울아레나 적용 사례 보기 ↗</a></div></div></section>
+<section class="map-product" id="map-service"><div class="wrap"><div class="section-head"><div class="eyebrow">SHOWDAY MAP</div><h2>지도는 부가기능이 아니라<br>‘오늘 갈 곳’을 결정하는 핵심 화면으로.</h2><p>검색 결과를 길게 나열하기보다 위치·시간·동행자·무료 여부를 먼저 좁히고, 지도와 목록이 같은 조건을 공유하도록 발전시킵니다.</p></div><div class="map-flow"><div><b>STEP 01</b><h3>조건을 먼저</h3><p>오늘·주말·무료·아이와·부모님과 같은 실제 선택 조건을 지도 진입 전에 빠르게 고릅니다.</p></div><div><b>STEP 02</b><h3>지도와 목록을 함께</h3><p>지도를 움직이면 해당 지역만 다시 검색하고, 선택한 공연은 위치·일정·가격·상세정보를 즉시 비교합니다.</p></div><div><b>STEP 03</b><h3>공연 가는 날로 연결</h3><p>공연을 선택한 뒤에는 공연장 길찾기뿐 아니라 주변 식사·카페·주차·짐보관·즐길거리까지 이어집니다.</p></div></div><div class="map-cta"><a href="https://showday.kr/search?from=map" target="_blank" rel="noopener">현재 SHOWDAY 지도검색 보기 ↗</a><a class="alt" href="https://showday.kr/" target="_blank" rel="noopener">SHOWDAY 서비스 보기 ↗</a></div></div></section>
 <section class="feature-row" id="showday-original">
   <div class="wrap">
     <div class="original-head">
       <span>SHOWDAY ORIGINAL</span>
-      <h2>세 가지 사업은 서로 다른 문제를 해결합니다.</h2>
-      <p>같은 내용을 반복하지 않고, 고객과 사용 상황에 따라 역할을 분명하게 나눴습니다.</p>
+      <h2>공연을 즐기는 사람마다<br>필요한 시간은 다릅니다.</h2>
+      <p>공연을 찾는 순간부터 함께 온 가족의 시간과 공연 당일 현장까지,<br>SHOWDAY만의 세 가지 서비스로 공연 경험을 더 넓게 연결합니다.</p>
     </div>
     <div class="original-grid">
       <a class="original-card" href="/50plus/">
         <div class="original-code">50+</div>
         <div>
-          <b>50+ 공연</b>
-          <small>50+가 직접 찾아오는 독립적인 토크·음악·문화 콘텐츠</small>
+          <b>50+ CULTURE</b>
+          <small>공연·전시·축제·체험을 더 쉽게 발견하고 즐기는 50+ 문화생활 큐레이션</small>
         </div>
         <span>→</span>
       </a>
       <a class="original-card" href="/parents/">
         <div class="original-code">P</div>
         <div>
-          <b>부모를 위한 공연</b>
-          <small>공연에 동행했지만 관람하지 않는 부모·보호자를 위한 시간</small>
+          <b>PARENTS TIME</b>
+          <small>함께 왔지만 공연은 보지 않는 부모·보호자의 대기와 주변 시간을 위한 서비스</small>
         </div>
         <span>→</span>
       </a>
@@ -506,7 +588,7 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
         <div class="original-code">LIVE</div>
         <div>
           <b>SHOWDAY LIVE</b>
-          <small>공연 전후의 이동·먹거리·지역상권·귀가를 연결하는 도시 경험</small>
+          <small>입장·혼잡·MD·주차·주변 편의와 관객 제보를 연결하는 공연 당일 현장 서비스</small>
         </div>
         <span>→</span>
       </a>
@@ -602,23 +684,6 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
   </div>
 </section>
 
-<section id="waitlist" class="cta">
-  <div class="wrap">
-    <div class="cta-box">
-      <div>
-        <h2>SHOWDAY가 열리면,<br>가장 먼저 알려드릴게요.</h2>
-        <p>공연 가는 날을 더 편하게 만드는 SHOWDAY. 오픈 소식을 가장 먼저 받아보세요.</p>
-        <div class="wl-row" style="margin-top:22px;max-width:440px;">
-          <input id="wlEmail" type="email" placeholder="이메일 주소" aria-label="이메일 주소">
-          <button class="btn btn-amber" id="wlSubmit">오픈 알림 신청</button>
-        </div>
-        <p class="wl-msg" id="wlMsg"></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section class="partner-section" id="partner">
   <div class="partner-wrap">
     <div class="partner-eyebrow">SHOWDAY PARTNER</div>
@@ -664,8 +729,8 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
 
     <div class="partner-form-wrap" id="partner-apply">
       <!--
-        Web3Forms 연결 완료: arenanow7@gmail.com 계정의 access_key가 적용되어 있습니다.
-        폼 제출 시 arenanow7@gmail.com으로 실제 이메일이 발송됩니다.
+        Web3Forms 문의 폼이 연결되어 있습니다.
+        폼 제출 시 SHOWDAY 담당자에게 문의가 전달됩니다.
       -->
       <h3>먼저 이야기 나눠보세요.</h3>
       <p class="partner-form-lede">복잡한 계약부터 요구하지 않습니다. 기본 정보를 남겨주시면 SHOWDAY 운영 방향에 맞는 제휴 방법을 함께 검토합니다.</p>
@@ -707,8 +772,8 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
   <div class="wrap footer-row">
     <span>SHOWDAY — 공연 가는 날을 위한 안내 서비스 (준비 중)</span>
     <div class="footer-links">
-      <a href="/50plus/">50+ 공연</a>
-      <a href="/parents/">부모를 위한 공연</a>
+      <a href="/50plus/">50+ CULTURE</a>
+      <a href="/parents/">PARENTS TIME</a>
       <a href="/live/">SHOWDAY LIVE</a>
       <a href="#partner-contact">행사·제휴 문의</a>
       <span>© SHOWDAY · showday.kr</span>
@@ -738,19 +803,7 @@ setInterval(() => {
   if (el) el.textContent = `${h}:${m}:${s}`;
 }, 1000);
 
-document.getElementById('wlSubmit').addEventListener('click', () => {
-  const email = document.getElementById('wlEmail').value.trim();
-  const msg = document.getElementById('wlMsg');
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!re.test(email)) {
-    msg.textContent = '이메일 주소를 다시 확인해주세요.';
-    msg.style.color = '#E8637A';
-    return;
-  }
-  msg.textContent = '남겨주셔서 감사합니다. 준비되면 가장 먼저 알려드릴게요.';
-  msg.style.color = '#F2B84B';
-  document.getElementById('wlEmail').value = '';
-});
+
 </script>
 
 <script>
