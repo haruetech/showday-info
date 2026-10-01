@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="50+가 직접 선택하는 토크, 음악, 문화, 배움 중심의 SHOWDAY 독립 공연 콘텐츠.">
-<meta name="theme-color" content="#0A0A08">
-<title>50+ 공연 | SHOWDAY</title>
+<meta name="description" content="파트너 유형별 QR 코드와 A4 전단지 인쇄">
+<meta name="robots" content="noindex"><meta name="theme-color" content="#0A0A08">
+<title>파트너 QR · 전단지 | SHOWDAY</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
@@ -51,6 +51,7 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 .sf-qr-img{width:72px;height:72px;padding:4px;background:#fff;border-radius:8px;line-height:0}.sf-qr-img img,.sf-qr-img canvas{width:64px!important;height:64px!important}
 @media(min-width:821px){.sf-qr:not([hidden]){display:flex}}
 .hero-bg{position:absolute;inset:0;z-index:0}.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,8,.88) 0%,rgba(10,10,8,.55) 50%,rgba(10,10,8,.15) 100%),linear-gradient(180deg,rgba(10,10,8,.15),rgba(10,10,8,.7))}
+.legal{max-width:760px;margin:0 auto;padding:72px 28px 96px}.legal .tag{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--amber)}.legal h1{font-size:34px;margin:10px 0 8px;letter-spacing:-.02em}.legal .eff{font-size:14px;color:var(--muted);margin:0 0 44px}.legal section{padding:0;border:0;margin-bottom:34px}.legal h2{font-size:17px;margin:0 0 10px}.legal p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.85;word-break:keep-all}@media(max-width:560px){.legal{padding:48px 20px 72px}.legal h1{font-size:28px}}
 
 /* 상단 메뉴 글씨 키움 */
 @media(min-width:900px){.nav-links{font-size:15.5px!important;font-weight:600;gap:26px!important;margin-left:32px!important;white-space:nowrap}.nav-links a{color:#E6E0D3}.nav-links a:hover,.nav-links a.active{color:var(--amber)}.nav-cta{font-size:14px!important;padding:12px 20px!important}}
@@ -66,61 +67,128 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 .nav-links .dd-menu a small{display:block;margin-top:3px;font-size:12.5px;font-weight:500;color:var(--muted)}
 .nav-links .dd-menu a:hover,.nav-links .dd-menu a:focus-visible{background:#241d13;color:var(--amber)}
 .nav-links .dd-menu a.dd-all{margin-top:4px;border-top:1px solid var(--line);border-radius:0 0 12px 12px;color:var(--amber);font-size:13.5px}
+
+/* QR 페이지 */
+.qrpage{max-width:var(--container,1120px);margin:0 auto;padding:64px 28px 96px}
+.qrpage h1{font-size:36px;margin:8px 0 10px;letter-spacing:-.02em;word-break:keep-all}.qrpage .tag{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--amber)}
+.qrpage .lead{color:var(--muted);line-height:1.8;max-width:640px;word-break:keep-all;margin:0 0 26px}
+.qrbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px}.qrbar button,.qrc-act button,.qrc-act a{font:inherit;font-weight:800;font-size:14px;border-radius:999px;padding:12px 20px;cursor:pointer;text-decoration:none;border:1px solid var(--line);background:transparent;color:var(--text)}
+.qrbar .pri{background:var(--amber);color:#241A05;border-color:var(--amber)}.qrbar button:hover,.qrc-act button:hover,.qrc-act a:hover{border-color:var(--amber);color:var(--amber)}.qrbar .pri:hover{color:#241A05;filter:brightness(1.05)}
+.qrpage h3.grp{font-size:18px;margin:44px 0 6px}.qrpage .grp-sub{color:var(--muted);font-size:14px;margin:0 0 20px}
+.qrgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.qrgrid.six{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.qrgrid,.qrgrid.six{grid-template-columns:1fr 1fr}}@media(max-width:560px){.qrpage{padding:44px 16px 72px}.qrpage h1{font-size:28px}.qrgrid,.qrgrid.six{grid-template-columns:1fr}}
+.qrc{background:linear-gradient(145deg,var(--surface2),var(--surface));border:1px solid var(--line);border-radius:22px;padding:26px 22px 20px;text-align:center}
+.qrc.main{border-color:rgba(242,184,75,.4)}
+.qrc-brand{font-size:11px;font-weight:900;letter-spacing:.14em;color:var(--amber)}
+.qrc-ko{margin:12px 0 4px;font-size:22px;letter-spacing:-.02em;word-break:keep-all}.qrc-en{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--muted)}
+.qrc-qr{width:200px;max-width:100%;margin:18px auto 12px;padding:10px;background:#fff;border-radius:14px;line-height:0}.qrc-qr img{width:100%;height:auto}
+.qrc-scan{font-weight:800;font-size:14px}.qrc-desc{margin:8px 0 0;font-size:13px;color:var(--muted);line-height:1.6;word-break:keep-all}
+.qrc-url{margin-top:12px;font-size:12px;color:var(--faint)}.qrc-free{display:none}
+.qrc-act{display:flex;gap:8px;justify-content:center;margin-top:16px}.qrc-act button,.qrc-act a{font-size:13px;padding:9px 14px}
+@page{size:A4;margin:0}
+@media print{
+ html,body{background:#fff!important;color:#111!important}
+ nav,.site-footer,.back-to-top,.noprint,.qrpage>.tag,.qrpage>h1,.qrpage>.lead,.qrbar,.grp,.grp-sub{display:none!important}
+ .qrpage{padding:0;max-width:none}.qrgrid,.qrgrid.six{display:block}
+ .qrc{display:flex;flex-direction:column;justify-content:center;width:210mm;height:296mm;margin:0;padding:18mm 20mm;border:0;border-radius:0;background:#fff!important;color:#111;page-break-after:always;break-after:page;overflow:hidden}
+ .qrc:last-child{page-break-after:auto;break-after:auto}
+ .qrc-in{border:3mm solid #111;border-radius:8mm;padding:16mm 12mm;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+ .qrc-brand{font-size:20pt;color:#B8821A;letter-spacing:.16em}
+ .qrc-ko{font-size:46pt;margin:10mm 0 3mm;color:#111;line-height:1.15}.qrc-en{font-size:17pt;color:#555;letter-spacing:.14em}
+ .qrc-qr{width:100mm;padding:4mm;margin:12mm 0 8mm;border:1px solid #ccc;background:#fff}
+ .qrc-scan{font-size:22pt;color:#111}.qrc-desc{font-size:15pt;color:#444;margin-top:6mm}
+ .qrc-url{font-size:15pt;color:#111;font-weight:700;margin-top:10mm}.qrc-free{display:block;margin-top:5mm;font-size:16pt;font-weight:900;color:#B8821A}
+ body.print-one .qrc:not(.pick){display:none!important}
+ body.print-one .qrc.pick{page-break-after:auto;break-after:auto}
+}
 </style>
 </head>
 <body>
-<nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><span class="nav-dd"><a href="/partner/">파트너 모집</a><div class="dd-menu"><a href="/partner/store/">🏪 매장 · 상점<small>음식점 · 카페 · 간식 · 굿즈 · 짐보관 · 숙박</small></a><a href="/partner/agency/">🎤 공연장 · 기획사<small>공연 등록 · 공식 공지 · 현장 안내</small></a><a href="/partner/collab/">🤝 지역기관 · 기업 · 협업<small>상권 연계 · 후원 · 콘텐츠 협업</small></a><a class="dd-all" href="/partner/">파트너 모집 전체 보기 ›</a></div></span><a href="/live/">쇼데이 라이브</a><a class="active" href="/50plus/">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a href="/qr/">QR</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-apply">제휴·사업 문의 ›</a></div></nav>
-<main id="top">
-<section class="hero"><div class="hero-bg"><img src="/assets/hero-50plus.jpg" alt="" loading="eager" data-hero="50plus" onerror="this.parentNode.style.display='none'"></div><div class="wrap hero-grid">
-  <div>
-    <div class="kicker">50+ CULTURE · SECOND STAGE</div>
-    <h1>50+에게 필요한 건<br>‘시니어 행사’가 아니라<br><span>좋은 콘텐츠입니다.</span></h1>
-    <p class="lede">50+ 공연은 부모 대기 프로그램과 별개입니다. 공연이 없는 날에도 50+가 직접 찾아오고 비용을 지불할 수 있는 토크, 음악, 문화, 배움의 독립 콘텐츠를 만듭니다.</p>
-    <div class="hero-ctas"><a class="btn btn-amber" href="#program">콘텐츠 보기 ›</a><a class="btn btn-line" href="/#partner-apply">기획 문의</a></div>
-  </div>
-  <div class="stage-card">
-    <div class="stage-top">50+ ORIGINAL CONTENT</div>
-    <h3>나이를 설명하기보다<br>지금 궁금한 이야기를 무대에.</h3>
-    <div class="stage-time"><b>01</b><span>지식·인생 토크</span></div>
-    <div class="stage-time"><b>02</b><span>음악·낭독·소극장 공연</span></div>
-    <div class="stage-time"><b>03</b><span>참여형 문화 클래스</span></div>
-    <div class="stage-note">핵심은 ‘시니어 복지 프로그램’이 아니라<br>50+가 스스로 선택하는 유료 문화 콘텐츠입니다.</div>
-  </div>
-</div></section>
-
-<section class="light-section"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">POSITIONING</div><h2>대형 콘서트와 경쟁하지 않는 ‘가까운 무대’를 만듭니다.</h2><p>대형 공연이 아티스트와 팬덤의 규모를 만든다면, 50+ 공연은 이야기의 깊이와 참여 경험으로 차별화합니다.</p></div>
-  <div class="problem-grid">
-    <div class="problem-card"><b>관객</b><p>새로운 취미와 배움, 문화생활, 인생 2막에 관심 있는 50+와 액티브 시니어.</p></div>
-    <div class="problem-card"><b>무대</b><p>소극장, 복합문화공간, 도서관, 기업·기관 공간처럼 관객과 출연자가 가까이 만나는 장소.</p></div>
-  </div>
-</div></section>
-
-<section id="program"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">ORIGINAL SERIES</div><h2>반복 운영할 수 있는 SHOWDAY 50+ 시리즈</h2><p>한 번의 행사가 아니라 주제와 출연자를 바꿔 지속적으로 운영할 수 있는 콘텐츠 IP를 목표로 합니다.</p></div>
-  <div class="program-grid">
-    <article class="program"><div class="num">01</div><h3>인생 2막 TALK</h3><p>퇴직 이후의 일, 창업, 관계, 여행, 새로운 배움을 실제 경험자의 이야기로 풀어냅니다.</p></article>
-    <article class="program"><div class="num">02</div><h3>생활형 AI TALK</h3><p>AI를 어렵게 설명하기보다 일상, 여행, 취미, 업무에서 바로 활용하는 방법을 보여줍니다.</p></article>
-    <article class="program"><div class="num">03</div><h3>MUSIC & STORY</h3><p>세대의 음악과 개인의 기억을 연결한 라이브, 낭독, 토크형 소극장 공연을 기획합니다.</p></article>
-    <article class="program"><div class="num">04</div><h3>CULTURE CLASS</h3><p>사진, 영상, 글쓰기, 음악, 스마트폰 등 결과물이 남는 참여형 프로그램으로 확장합니다.</p></article>
-  </div>
-</div></section>
-
-<section class="dark-section"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">오늘하루 · DIGITAL CONTENT</div><h2>공연에서 검증된 콘텐츠는 일상으로 확장합니다.</h2><p>명상음악, 50+ 영상, 두뇌활동 게임은 현장 공연과 별도로, ‘오늘하루’의 디지털 콘텐츠로 이어집니다.</p></div>
-  <div class="program-grid">
-    <article class="program"><div class="num">A</div><h3>명상·힐링 음악</h3><p>수면, 산책, 호흡, 휴식에 맞춘 오디오 콘텐츠를 제작합니다.</p></article>
-    <article class="program"><div class="num">B</div><h3>50+ 영상</h3><p>건강, 여행, AI, 문화, 인터뷰를 짧고 보기 편한 영상으로 만듭니다.</p></article>
-    <article class="program"><div class="num">C</div><h3>두뇌활동 게임</h3><p>기억, 언어, 집중, 계산을 활용하는 인지활동형 콘텐츠로 개발합니다.</p></article>
-    <article class="program"><div class="num">D</div><h3>콘텐츠 아카이브</h3><p>강연과 공연의 핵심 내용을 다시 볼 수 있는 디지털 자료로 축적합니다.</p></article>
-  </div>
-</div></section>
-
-<section class="partner-callout"><div class="wrap"><div class="partner-box">
-  <div><h3>50+가 직접 찾아오는 문화 콘텐츠를 함께 만듭니다.</h3><p>강연자, 아티스트, 문화공간, 기업·기관과 정기 시리즈를 기획합니다.</p></div>
-  <div class="partner-actions"><a class="btn btn-amber" href="/#partner-apply">50+ 공연 기획 문의 ›</a></div>
-</div></div></section>
-</main>
+<nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><span class="nav-dd"><a href="/partner/">파트너 모집</a><div class="dd-menu"><a href="/partner/store/">🏪 매장 · 상점<small>음식점 · 카페 · 간식 · 굿즈 · 짐보관 · 숙박</small></a><a href="/partner/agency/">🎤 공연장 · 기획사<small>공연 등록 · 공식 공지 · 현장 안내</small></a><a href="/partner/collab/">🤝 지역기관 · 기업 · 협업<small>상권 연계 · 후원 · 콘텐츠 협업</small></a><a class="dd-all" href="/partner/">파트너 모집 전체 보기 ›</a></div></span><a href="/live/">쇼데이 라이브</a><a href="/50plus/">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a class="active" href="/qr/">QR</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-apply">제휴·사업 문의 ›</a></div></nav>
+<main class="qrpage"><div class="tag">PARTNER QR</div><h1>파트너 유형별 QR 코드</h1>
+<p class="lead">유형별 QR을 스캔하면 해당 파트너 제안 페이지로 연결됩니다. 아래 버튼으로 A4 전단지(유형당 1장)를 바로 인쇄할 수 있어요. 인쇄 설정에서 「배경 그래픽」을 켜면 더 선명합니다.</p>
+<div class="qrbar noprint"><button type="button" class="pri" id="printAll">전체 전단지 인쇄 (A4 · 9장)</button><button type="button" id="printMain">대표 3종만 인쇄 (3장)</button></div>
+<h3 class="grp">대표 유형</h3><p class="grp-sub">매장 · 공연장/기획사 · 지역기관/기업</p>
+<div class="qrgrid"><article class="qrc main" id="store">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">매장 · 상점</h2><div class="qrc-en">LOCAL STORES</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-store.svg" alt="매장 · 상점 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">음식점 · 카페 · 간식 · 굿즈 · 짐보관 · 숙박 매장 제안</p>
+<div class="qrc-url">info.showday.kr/go/store/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="store">이 전단지만 인쇄</button><a href="/assets/qr/qr-store.png" download="showday-qr-store.png">PNG 저장</a></div>
+</article><article class="qrc main" id="agency">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">공연장 · 기획사</h2><div class="qrc-en">VENUES & AGENCIES</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-agency.svg" alt="공연장 · 기획사 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">공연 등록 · 공식 공지 · 현장 안내 제안</p>
+<div class="qrc-url">info.showday.kr/go/agency/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="agency">이 전단지만 인쇄</button><a href="/assets/qr/qr-agency.png" download="showday-qr-agency.png">PNG 저장</a></div>
+</article><article class="qrc main" id="collab">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">지역기관 · 기업 · 협업</h2><div class="qrc-en">REGIONAL · CORPORATE · COLLAB</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-collab.svg" alt="지역기관 · 기업 · 협업 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">상권 연계 · 후원 · 콘텐츠 협업 제안</p>
+<div class="qrc-url">info.showday.kr/go/collab/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="collab">이 전단지만 인쇄</button><a href="/assets/qr/qr-collab.png" download="showday-qr-collab.png">PNG 저장</a></div>
+</article></div>
+<h3 class="grp">매장 업종별</h3><p class="grp-sub">업종에 맞는 제안 페이지로 바로 연결됩니다.</p>
+<div class="qrgrid six"><article class="qrc" id="food">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">음식점</h2><div class="qrc-en">RESTAURANTS</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-food.svg" alt="음식점 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">공연 전후 식사 · 예약 · 웨이팅 연계</p>
+<div class="qrc-url">info.showday.kr/go/food/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="food">이 전단지만 인쇄</button><a href="/assets/qr/qr-food.png" download="showday-qr-food.png">PNG 저장</a></div>
+</article><article class="qrc" id="cafe">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">카페 · 음료</h2><div class="qrc-en">CAFES & DRINKS</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-cafe.svg" alt="카페 · 음료 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">공연 전 대기 · 관람 후 휴식 공간</p>
+<div class="qrc-url">info.showday.kr/go/cafe/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="cafe">이 전단지만 인쇄</button><a href="/assets/qr/qr-cafe.png" download="showday-qr-cafe.png">PNG 저장</a></div>
+</article><article class="qrc" id="snack">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">간식 · 도시락</h2><div class="qrc-en">SNACKS & LUNCHBOXES</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-snack.svg" alt="간식 · 도시락 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">관람 전 간편 식사 · 포장 주문</p>
+<div class="qrc-url">info.showday.kr/go/snack/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="snack">이 전단지만 인쇄</button><a href="/assets/qr/qr-snack.png" download="showday-qr-snack.png">PNG 저장</a></div>
+</article><article class="qrc" id="goods">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">굿즈 · 브랜드</h2><div class="qrc-en">GOODS & BRANDS</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-goods.svg" alt="굿즈 · 브랜드 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">공연 굿즈 · 브랜드 팝업 · 협업 판매</p>
+<div class="qrc-url">info.showday.kr/go/goods/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="goods">이 전단지만 인쇄</button><a href="/assets/qr/qr-goods.png" download="showday-qr-goods.png">PNG 저장</a></div>
+</article><article class="qrc" id="locker">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">짐보관 · 편의</h2><div class="qrc-en">LOCKERS & CONVENIENCE</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-locker.svg" alt="짐보관 · 편의 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">짐보관 · 충전 · 휴게 등 편의 서비스</p>
+<div class="qrc-url">info.showday.kr/go/locker/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="locker">이 전단지만 인쇄</button><a href="/assets/qr/qr-locker.png" download="showday-qr-locker.png">PNG 저장</a></div>
+</article><article class="qrc" id="stay">
+<div class="qrc-in"><div class="qrc-brand">SHOWDAY 파트너 모집</div>
+<h2 class="qrc-ko">숙박 · 관광</h2><div class="qrc-en">STAY & TOURISM</div>
+<div class="qrc-qr"><img src="/assets/qr/qr-stay.svg" alt="숙박 · 관광 QR 코드" width="300" height="300"></div>
+<div class="qrc-scan">스마트폰 카메라로 스캔하세요</div>
+<p class="qrc-desc">지방 관객 숙박 · 지역 관광 연계</p>
+<div class="qrc-url">info.showday.kr/go/stay/</div><div class="qrc-free">신청은 무료입니다</div></div>
+<div class="qrc-act noprint"><button type="button" data-print="stay">이 전단지만 인쇄</button><a href="/assets/qr/qr-stay.png" download="showday-qr-stay.png">PNG 저장</a></div>
+</article></div></main>
+<script>(function(){var B=document.body;function go(sel){document.querySelectorAll(".qrc").forEach(function(c){c.classList.toggle("pick",!sel||sel.indexOf(c.id)>-1)});B.classList.toggle("print-one",!!sel);window.print()}
+window.addEventListener("afterprint",function(){B.classList.remove("print-one")});
+document.getElementById("printAll").onclick=function(){go(null)};
+document.getElementById("printMain").onclick=function(){go(["store","agency","collab"])};
+document.querySelectorAll("[data-print]").forEach(function(b){b.onclick=function(){go([b.dataset.print])}})})();</script>
 <footer class="site-footer">
   <div class="wrap">
     <div class="sf-top">
@@ -161,12 +229,5 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 </footer>
 <script src="/assets/footer-sync.js" defer></script>
 <button class="back-to-top" id="backToTop" type="button" aria-label="페이지 상단으로 이동" title="상단으로">↑</button>
-<script>
-(function(){
-  const btn=document.getElementById('backToTop');
-  const toggle=()=>window.scrollY>500?btn.classList.add('show'):btn.classList.remove('show');
-  window.addEventListener('scroll',toggle,{passive:true});toggle();
-  btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-})();
-</script>
+<script>(function(){var b=document.getElementById("backToTop");var t=function(){window.scrollY>500?b.classList.add("show"):b.classList.remove("show")};window.addEventListener("scroll",t,{passive:true});t();b.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})})})();</script>
 </body></html>
