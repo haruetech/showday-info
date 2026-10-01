@@ -27,12 +27,36 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 @media(min-width:900px){.nav-links{gap:17px;margin-left:28px;font-size:12.5px}}
 @media(max-width:899px){.nav-links{display:none}.nav-cta{font-size:11.5px;padding:9px 14px}}
 @media(max-width:560px){.hero{padding:70px 0 64px}h1{font-size:38px;line-height:1.15}.lede{font-size:15px;line-height:1.75}.hero-ctas .btn,.partner-actions .btn{width:100%}.back-to-top{right:16px;bottom:16px;width:44px;height:44px}section{padding:64px 0}.section-head{margin-bottom:34px}.section-head h2{font-size:28px}}
+
+/* ---------- 공통 푸터 ---------- */
+.site-footer{border-top:1px solid var(--line);padding:48px 0 36px;font-size:13px;color:var(--muted)}
+.site-footer a{color:var(--muted);text-decoration:none;transition:.2s}.site-footer a:hover{color:var(--amber)}
+.sf-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.sf-brand b{display:block;font-size:15px;color:var(--text);margin-bottom:12px}
+.sf-brand p{margin:0 0 20px;line-height:1.75;max-width:300px;word-break:keep-all}
+.sf-col h4{margin:0 0 14px;font-size:13.5px;color:var(--text)}
+.sf-col a{display:block;margin-bottom:10px;line-height:1.5}
+.sf-kakao{display:inline-flex;align-items:center;gap:8px;background:#FEE500;color:#191919!important;font-weight:800;font-size:13px;padding:11px 18px;border-radius:999px}
+.sf-kakao:hover{filter:brightness(.95);color:#191919!important}
+.sf-kakao i{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:#191919;color:#FEE500;font-size:10px;font-style:normal;font-weight:900}
+.sf-biz{margin-top:34px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;line-height:1.9;color:var(--faint)}
+.sf-biz p{margin:0 0 4px}.sf-biz a{text-decoration:underline;text-underline-offset:3px}
+.sf-biz .sf-copy{margin-top:12px}
+@media(max-width:820px){.sf-top{grid-template-columns:1fr 1fr}.sf-brand{grid-column:1/-1}}
+@media(max-width:480px){.sf-top{grid-template-columns:1fr}.site-footer{padding:40px 0 30px}}
+.sf-mail{background:var(--amber)!important;color:#241A05!important}.sf-mail:hover{filter:brightness(1.05)}
+.sf-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.sf-kakao[hidden],.sf-mail[hidden],.sf-qr[hidden]{display:none!important}
+.sf-qr{display:none;flex-direction:column;align-items:center;gap:4px;font-size:10px;color:var(--faint)}
+.sf-qr-img{width:72px;height:72px;padding:4px;background:#fff;border-radius:8px;line-height:0}.sf-qr-img img,.sf-qr-img canvas{width:64px!important;height:64px!important}
+@media(min-width:821px){.sf-qr:not([hidden]){display:flex}}
+.hero-bg{position:absolute;inset:0;z-index:0}.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,8,.88) 0%,rgba(10,10,8,.55) 50%,rgba(10,10,8,.15) 100%),linear-gradient(180deg,rgba(10,10,8,.15),rgba(10,10,8,.7))}
 </style>
 </head>
 <body>
-<nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><a href="/#journey">서비스 소개</a><a class="active" href="#top">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a href="/live/">SHOWDAY LIVE</a><a href="/#partner">파트너</a><a href="/#partner-contact">제휴 문의</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-contact">기획 문의 ›</a></div></nav>
+<nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><a href="/#journey">서비스 소개</a><a class="active" href="#top">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a href="/live/">쇼데이 라이브</a><a href="/#partner">파트너 안내</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-contact">제휴·사업 문의 ›</a></div></nav>
 <main id="top">
-<section class="hero"><div class="wrap hero-grid">
+<section class="hero"><div class="hero-bg"><img src="/assets/hero-50plus.jpg" alt="" loading="eager" data-hero="50plus" onerror="this.parentNode.style.display='none'"></div><div class="wrap hero-grid">
   <div>
     <div class="kicker">50+ CULTURE · SECOND STAGE</div>
     <h1>50+에게 필요한 건<br>‘시니어 행사’가 아니라<br><span>좋은 콘텐츠입니다.</span></h1>
@@ -45,7 +69,7 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
     <div class="stage-time"><b>01</b><span>지식·인생 토크</span></div>
     <div class="stage-time"><b>02</b><span>음악·낭독·소극장 공연</span></div>
     <div class="stage-time"><b>03</b><span>참여형 문화 클래스</span></div>
-    <div class="stage-note">핵심은 ‘시니어 복지 프로그램’이 아니라 50+가 스스로 선택하는 유료 문화 콘텐츠입니다.</div>
+    <div class="stage-note">핵심은 ‘시니어 복지 프로그램’이 아니라<br>50+가 스스로 선택하는 유료 문화 콘텐츠입니다.</div>
   </div>
 </div></section>
 
@@ -68,7 +92,7 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 </div></section>
 
 <section class="dark-section"><div class="wrap">
-  <div class="section-head"><div class="eyebrow">HARUE CONTENT LAB</div><h2>공연에서 검증된 콘텐츠는 일상으로 확장합니다.</h2><p>명상음악, 50+ 영상, 두뇌활동 게임은 SHOWDAY LIVE나 부모 프로그램이 아니라 HARUE의 디지털 콘텐츠 영역으로 연결합니다.</p></div>
+  <div class="section-head"><div class="eyebrow">오늘하루 · DIGITAL CONTENT</div><h2>공연에서 검증된 콘텐츠는 일상으로 확장합니다.</h2><p>명상음악, 50+ 영상, 두뇌활동 게임은 현장 공연과 별도로, ‘오늘하루’의 디지털 콘텐츠로 이어집니다.</p></div>
   <div class="program-grid">
     <article class="program"><div class="num">A</div><h3>명상·힐링 음악</h3><p>수면, 산책, 호흡, 휴식에 맞춘 오디오 콘텐츠를 제작합니다.</p></article>
     <article class="program"><div class="num">B</div><h3>50+ 영상</h3><p>건강, 여행, AI, 문화, 인터뷰를 짧고 보기 편한 영상으로 만듭니다.</p></article>
@@ -82,7 +106,45 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
   <div class="partner-actions"><a class="btn btn-amber" href="/#partner-contact">50+ 공연 기획 문의 ›</a></div>
 </div></div></section>
 </main>
-<footer><div class="wrap footer-row"><span>SHOWDAY — 공연 가는 날을 위한 안내 서비스 (준비 중)</span><div class="footer-links"><a href="/">SHOWDAY 메인</a><a href="/parents/">부모를 위한 공연</a><a href="/live/">SHOWDAY LIVE</a><a href="/#partner-contact">행사·제휴 문의</a><span>© SHOWDAY · showday.kr</span></div></div></footer>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="sf-top">
+      <div class="sf-brand">
+        <b>SHOWDAY — 하루애</b>
+        <p>공연을 찾아 헤매지 않고, 지금 볼 만한 선택지를 먼저 보여드립니다.</p>
+        <!-- 카카오톡 채널·사업자 정보는 메인 사이트 관리자(채널 설정 / 사업자 정보)에서 등록하면 자동 반영됩니다. -->
+        <div class="sf-actions">
+          <a class="sf-kakao" id="sfKakao" href="https://pf.kakao.com/_SnjrX" target="_blank" rel="noopener"><i>K</i>카카오톡 채널 추가</a>
+          <div class="sf-qr" id="sfQr" hidden><div class="sf-qr-img"></div><span>PC는 QR로 추가</span></div>
+        </div>
+      </div>
+      <div class="sf-col">
+        <h4>서비스</h4>
+        <a href="https://map.showday.kr/" target="_blank" rel="noopener">공연 찾기</a>
+        <a href="https://showday.kr/my-area" target="_blank" rel="noopener">내 주변 공연·행사</a>
+        <a href="https://showday.kr/my" target="_blank" rel="noopener">내 쇼데이</a>
+      </div>
+      <div class="sf-col">
+        <h4>이용 정보</h4>
+        <a href="/terms/">이용약관</a>
+        <a href="/privacy/">개인정보처리방침</a>
+      </div>
+      <div class="sf-col">
+        <h4>패밀리 사이트</h4>
+        <a href="https://map.showday.kr/" target="_blank" rel="noopener">쇼데이 지도</a>
+        <a href="https://arena.showday.kr/" target="_blank" rel="noopener">아레나 나우</a>
+        <a href="https://oneulharu.co.kr/" target="_blank" rel="noopener">오늘하루</a>
+        <a href="https://plus.haruepick.com/" target="_blank" rel="noopener">하루애+</a>
+      </div>
+    </div>
+    <div class="sf-biz">
+      <p id="sfBiz1">상호명 하루애 · 대표 배준호 · 사업자등록번호 612-16-96538 통신판매업신고 2026-서울도봉-0131호 · 주소 도봉구 도봉산3길36</p>
+      <p id="sfBiz2">고객센터 showday.help@gmail.com · 사업자등록번호는 <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6121696538" target="_blank" rel="noopener">공정거래위원회 사업자정보확인</a>에서 조회하실 수 있습니다.</p>
+      <p class="sf-copy">공연 데이터 제공: 공연예술통합전산망(KOPIS)<br>© 2026 하루애. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/footer-sync.js" defer></script>
 <button class="back-to-top" id="backToTop" type="button" aria-label="페이지 상단으로 이동" title="상단으로">↑</button>
 <script>
 (function(){
