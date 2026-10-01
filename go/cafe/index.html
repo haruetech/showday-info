@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>SHOWDAY 파트너 모집으로 이동합니다</title>
+<noscript><meta http-equiv="refresh" content="0;url=/partner/store/#cafe"></noscript>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0A0A08;color:#F4F1EA;font-family:Pretendard,-apple-system,"Noto Sans KR",sans-serif;text-align:center}a{color:#F2B84B}p{line-height:1.8;margin:0}</style></head>
+<body><p>SHOWDAY 파트너 모집 · 카페 · 음료 페이지로 이동합니다.<br><a href="/partner/store/#cafe">자동으로 이동하지 않으면 여기를 눌러주세요.</a></p>
+<script>
+(function(){
+  // QR로 들어온 경우 유입 경로(src)를 붙여서 이동합니다. 주소 뒤에 ?src=전단지 처럼 직접 지정할 수도 있습니다.
+  var q=new URLSearchParams(location.search);
+  if(!q.get('src')) q.set('src','qr-cafe');
+  location.replace('/partner/store/?'+q.toString()+'#cafe');
+})();
+</script></body></html>
