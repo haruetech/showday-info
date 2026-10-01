@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="공연 전후의 이동, 체류, 먹거리, 주변 공간과 귀가를 연결하는 SHOWDAY 공연일 도시 경험 서비스.">
+<meta name="description" content="매장·상점, 공연장·기획사, 지역기관·기업 — SHOWDAY와 함께할 파트너를 위한 제안을 유형별로 골라 보세요.">
 <meta name="theme-color" content="#0A0A08">
-<title>SHOWDAY LIVE | SHOWDAY</title>
+<title>파트너 안내 | SHOWDAY</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
@@ -51,16 +51,53 @@ footer{padding:30px 0;color:var(--faint);font-size:11.5px}.footer-row{display:fl
 .sf-qr-img{width:72px;height:72px;padding:4px;background:#fff;border-radius:8px;line-height:0}.sf-qr-img img,.sf-qr-img canvas{width:64px!important;height:64px!important}
 @media(min-width:821px){.sf-qr:not([hidden]){display:flex}}
 .hero-bg{position:absolute;inset:0;z-index:0}.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,8,.88) 0%,rgba(10,10,8,.55) 50%,rgba(10,10,8,.15) 100%),linear-gradient(180deg,rgba(10,10,8,.15),rgba(10,10,8,.7))}
+
+.hero.compact{min-height:0;padding:76px 0 64px}.hero.compact .hero-grid{grid-template-columns:1fr;width:100%}.hero.compact h1{font-size:clamp(34px,6vw,58px)}.hero.compact .lede{max-width:640px;margin-bottom:0}
+.hero.compact .hero-bg:after{background:linear-gradient(90deg,rgba(10,10,8,.9) 0%,rgba(10,10,8,.65) 60%,rgba(10,10,8,.4) 100%),linear-gradient(180deg,rgba(10,10,8,.2),rgba(10,10,8,.8))}
+.choice-grid{display:grid;grid-template-columns:1fr;gap:18px}@media(min-width:900px){.choice-grid{grid-template-columns:repeat(3,1fr)}}
+.choice-card{display:flex;flex-direction:column;gap:14px;padding:30px 28px;border-radius:24px;background:#fff;background:rgba(255,255,255,.62);border:1px solid rgba(29,24,16,.12);color:#1D1810;transition:.2s;text-decoration:none}
+.choice-card:hover,.choice-card:focus-visible{transform:translateY(-4px);border-color:#C98A1E;box-shadow:0 18px 40px rgba(120,80,20,.14)}
+.choice-card .ci{width:54px;height:54px;border-radius:16px;background:linear-gradient(145deg,#F6C877,#F2B84B);display:grid;place-items:center;font-size:27px}
+.choice-card .who{font-size:11.5px;font-weight:900;letter-spacing:.08em;color:#8A5A12}
+.choice-card h3{margin:0;font-size:23px;line-height:1.35;letter-spacing:-.02em;word-break:keep-all}
+.choice-card p{margin:0;font-size:14.5px;line-height:1.75;color:rgba(29,24,16,.7);word-break:keep-all}
+.choice-card ul{margin:0;padding:0;list-style:none;display:grid;gap:7px}.choice-card li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.6;color:rgba(29,24,16,.78);word-break:keep-all}.choice-card li:before{content:"✓";position:absolute;left:0;color:#B3742F;font-weight:900}
+.choice-card .go{margin-top:auto;padding-top:6px;font-weight:800;font-size:15px;color:#8A5A12}
+.pick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}@media(min-width:820px){.pick-grid{grid-template-columns:repeat(3,1fr)}}
+.pick{display:flex;align-items:center;gap:14px;padding:18px 18px;border-radius:18px;background:var(--surface2);border:1px solid var(--line);text-decoration:none;transition:.2s;min-height:76px}
+.pick:hover,.pick:focus-visible{transform:translateY(-2px);border-color:rgba(243,191,85,.6);background:#201a12}
+.pick .e{font-size:28px;flex:none}.pick b{display:block;font-size:15.5px;color:var(--text)}.pick span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}.pick .ar{margin-left:auto;color:var(--amber);font-weight:900}
+@media(max-width:560px){.pick{padding:14px;gap:10px;min-height:68px}.pick .e{font-size:24px}.pick b{font-size:14px}.pick span{font-size:11.5px}.choice-card{padding:24px 22px}.hero.compact{padding:56px 0 48px}}
+.assure{display:grid;grid-template-columns:1fr;gap:12px;margin-top:6px}@media(min-width:760px){.assure{grid-template-columns:repeat(3,1fr)}}
+.assure div{padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.5);border:1px solid rgba(29,24,16,.1);font-size:14px;line-height:1.7;color:rgba(29,24,16,.78);word-break:keep-all}.assure b{display:block;color:#1D1810;margin-bottom:4px;font-size:15px}
+.ask-band{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding:26px 28px;border-radius:22px;background:#E8DDCB;color:#1D1810;margin-top:28px}.ask-band b{font-size:18px}.ask-band span{display:block;font-size:14px;color:rgba(29,24,16,.65);margin-top:4px}.ask-band .acts{display:flex;gap:10px;flex-wrap:wrap}.ask-band .btn-line{color:#1D1810;border-color:rgba(29,24,16,.3)}
+@media(max-width:560px){.ask-band .acts,.ask-band .btn{width:100%}}
 </style>
 </head>
 <body>
-<nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><a href="/#journey">서비스 소개</a><a href="/50plus/">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a class="active" href="#top">쇼데이 라이브</a><a href="/partner/">파트너 안내</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-apply">제휴·사업 문의 ›</a></div></nav>
+<nav><div class="navrow"><a class="brand" href="/" aria-label="SHOWDAY 메인으로 이동"><span class="display">SHOWDAY</span><small>공연 가는 날, 필요한 모든 것</small></a><div class="nav-links"><a href="/#journey">서비스 소개</a><a href="/50plus/">50+ 공연</a><a href="/parents/">부모를 위한 공연</a><a href="/live/">쇼데이 라이브</a><a class="active" href="/partner/">파트너 안내</a></div><a class="btn btn-amber btn-sm nav-cta" href="/#partner-apply">제휴·사업 문의 ›</a></div></nav>
 <main id="top">
-<section class="hero"><div class="hero-bg"><img src="/assets/hero-showday.jpg" alt="" loading="eager" onerror="this.parentNode.style.display='none'"></div><div class="wrap hero-grid"><div><div class="kicker">SHOWDAY LIVE · CITY EXPERIENCE</div><h1>공연이 있는 날,<br><span>도시의 시간이<br>더 길어집니다.</span></h1><p class="lede">SHOWDAY LIVE는 공연장 안의 콘텐츠를 만드는 서비스가 아닙니다. 공연을 보러 온 방문객이 공연 전후에 어디서 먹고, 쉬고, 이동하고, 무엇을 할지 공연 시간과 위치에 맞춰 연결하는 공연일 도시 경험 서비스입니다.</p><div class="hero-ctas"><a class="btn btn-amber" href="#program">공연 당일 흐름 보기 ›</a><a class="btn btn-line" href="#communication">현장 소통 보기</a></div></div><div class="stage-card"><div class="stage-top">BEFORE · STREET · AFTER · LOCAL</div><h3>공연장 안의 콘텐츠가 아니라<br>공연장 밖의 하루를 연결합니다.</h3><div class="stage-time"><b>01</b><span>공연 전 준비와 체류</span></div><div class="stage-time"><b>02</b><span>공연장까지의 이동과 주변 이용</span></div><div class="stage-time"><b>03</b><span>공연 중 동행자의 다른 시간</span></div><div class="stage-time"><b>04</b><span>공연 후 야간 이동과 소비</span></div><div class="stage-note">대형 K-컬처 행사와 경쟁하기보다, 방문객의 이동·체류·지역 소비를 보완하는 역할에 집중합니다.</div></div></div></section>
-<section class="light-section" id="communication"><div class="wrap"><div class="section-head"><div class="eyebrow">CLEAR POSITION</div><h2>팬덤 행사는 ‘행사 주최자’가,<br>공연일 생활 서비스는 SHOWDAY가.</h2><p>SHOWDAY는 팬덤 시상식이나 대형 팬 이벤트를 직접 운영하는 사업보다, 방문객이 실제로 겪는 공연장 밖의 불편과 지역 체류를 해결하는 데 집중합니다.</p></div><div class="problem-grid"><div class="problem-card"><b>하지 않는 것</b><p>팬덤 시상식, 대형 팬 페스티벌, 아티스트 공식 팬클럽 운영, 무단 공연 중계.</p></div><div class="problem-card solution"><b>집중하는 것</b><p>공연 전후 먹거리, 짐보관, 휴식, 거리 정보, 지역상권, 야간 이동, 귀가 안내.</p></div></div></div></section>
-<section id="program"><div class="wrap"><div class="section-head"><div class="eyebrow">PERFORMANCE DAY JOURNEY</div><h2>공연 전부터 귀가까지,<br>하루의 흐름을 연결합니다.</h2><p>공연 시간을 기준으로 이동·체류·주변 이용·동행자의 시간·귀가에 필요한 정보를 한 흐름으로 구성합니다.</p></div><div class="program-grid"><article class="program"><div class="num">01</div><h3>BEFORE</h3><p>공연시간, 교통, 주차, 게이트, 준비물과 도착 전에 필요한 정보를 한 화면에 모읍니다.</p></article><article class="program"><div class="num">02</div><h3>STREET</h3><p>공연장 주변의 식당·카페·짐보관·편의점·휴식 공간을 공연 시간과 위치에 맞춰 찾습니다.</p></article><article class="program"><div class="num">03</div><h3>TOGETHER</h3><p>공연을 보지 않는 부모·보호자 등 동행자가 같은 시간에 이용할 주변 활동과 머물 곳을 연결합니다.</p></article><article class="program"><div class="num">04</div><h3>AFTER</h3><p>공연 종료 후 대중교통·택시·늦게까지 이용 가능한 매장과 귀가·재합류 동선을 이어줍니다.</p></article></div></div></section>
-<section class="dark-section"><div class="wrap"><div class="section-head"><div class="eyebrow">BUSINESS MODEL</div><h2>방문객의 ‘체류’가<br>지역의 매출로 이어지게 합니다.</h2><p>SHOWDAY LIVE의 수익은 팬 이벤트 티켓보다 지역 파트너 연결과 공연일 서비스에서 찾습니다.</p></div><div class="program-grid"><article class="program"><div class="num">A</div><h3>LOCAL PARTNER</h3><p>음식점, 카페, 짐보관, 숙박, 상점의 예약·쿠폰·추천 제휴.</p></article><article class="program"><div class="num">B</div><h3>POP-UP &amp; FOOD</h3><p>공연일 수요에 맞춘 팝업, K-라이스 디저트, 픽업형 먹거리 등 공연 전후 소비를 연결합니다.</p></article><article class="program"><div class="num">C</div><h3>B2B SERVICE</h3><p>공연기획사와 시설에 동선·동행자·지역안내 서비스를 공연별 패키지로 제안합니다.</p></article><article class="program"><div class="num">D</div><h3>PUBLIC PARTNERSHIP</h3><p>지자체와 체류시간, 야간경제, 지역상권 활성화를 위한 공연일 생활 서비스로 협력합니다.</p></article></div></div></section>
-<section class="partner-callout"><div class="wrap"><div class="partner-box"><div><h3>공연장 안보다, 공연장 밖의 시간을 연결합니다.</h3><p>SHOWDAY LIVE는 공연을 만드는 사업이 아니라 공연이 있는 날 방문객의 이동·체류·지역 소비·귀가를 연결하는 공연일 생활 서비스입니다.</p></div><div class="partner-actions"><a class="btn btn-amber" href="/#partner-apply">SHOWDAY LIVE 제휴 문의 ›</a></div></div></div></section>
+<section class="hero compact"><div class="hero-bg"><img src="/assets/hero-main.jpg" alt="" loading="eager" onerror="this.parentNode.style.display='none'"></div><div class="wrap hero-grid"><div><div class="kicker">SHOWDAY PARTNER</div><h1>어떤 분이세요?<br><span>맞는 제안만 골라 보세요.</span></h1><p class="lede">공연이 있는 날, SHOWDAY와 함께할 파트너를 기다립니다. 아래에서 나에게 해당하는 곳을 고르면, 그 분께 꼭 맞는 제안을 보여드립니다. 신청은 무료이고, 정식 오픈 전에는 순차적으로 검토합니다.</p></div></div></section>
+<section class="light-section" id="choose"><div class="wrap"><div class="section-head"><div class="eyebrow">CHOOSE YOUR PATH</div><h2>나에게 맞는 제안을 골라주세요.</h2><p>하나만 고르면 됩니다. 어느 쪽인지 모르겠다면 아래 문의로 편하게 물어보세요.</p></div>
+<div class="choice-grid">
+<a class="choice-card" href="/partner/store/"><div class="ci">🏪</div><div class="who">매장 · 상점 사장님</div><h3>공연 보러 온 사람들이<br>우리 가게로 옵니다</h3><p>공연장 주변에서 장사하신다면, 공연일 손님을 먼저 만나 보세요.</p><ul><li>예약 · 사전주문 · 쿠폰 연결</li><li>음식점 · 카페 · 간식 · 굿즈 · 짐보관 · 숙박</li><li>신청서 한 장으로 시작</li></ul><span class="go">매장 제안 보기 ›</span></a>
+<a class="choice-card" href="/partner/agency/"><div class="ci">🎤</div><div class="who">공연장 · 기획사</div><h3>좋은 공연이<br>더 가까이 관객에게</h3><p>공연을 알리고 현장 안내까지 이어가고 싶은 주최·기획사를 위한 제안입니다.</p><ul><li>공연 등록 · 홍보 팝업</li><li>공식 공지 · 현장 안내</li><li>주변 상권 · 동행자 서비스 연계</li></ul><span class="go">기획사 제안 보기 ›</span></a>
+<a class="choice-card" href="/partner/collab/"><div class="ci">🤝</div><div class="who">지역기관 · 기업 · 협업</div><h3>공연이 있는 날<br>지역이 함께 커집니다</h3><p>지자체·문화기관·기업·단체와 함께 공연일 방문 흐름을 지역의 가치로 연결합니다.</p><ul><li>상권 연계 · 공동 프로모션</li><li>후원 · 콘텐츠 · 50+ 프로그램 협업</li><li>작은 시범부터 함께 시작</li></ul><span class="go">협업 제안 보기 ›</span></a>
+</div>
+<div class="ask-band"><div><b>아직 어느 쪽인지 모르겠어요</b><span>하시는 일을 간단히 알려주시면 맞는 제안을 안내해 드립니다.</span></div><div class="acts"><a class="btn btn-amber" href="/#partner-apply">제휴·사업 문의 ›</a><a class="btn btn-line" href="https://pf.kakao.com/_SnjrX/chat" target="_blank" rel="noopener">카카오톡 문의</a></div></div>
+</div></section>
+<section class="dark-section" id="store-types"><div class="wrap"><div class="section-head"><div class="eyebrow">FOR LOCAL STORES</div><h2>매장 · 상점이라면,<br>업종을 골라 보세요.</h2><p>업종마다 맞는 제안이 따로 있습니다. 누르면 해당 업종 설명으로 바로 이동합니다.</p></div>
+<div class="pick-grid">
+<a class="pick" href="/partner/store/#food"><span class="e">🍽️</span><div><b>음식점</b><span>식사 · 야식 · 공연일 메뉴</span></div><i class="ar">›</i></a>
+<a class="pick" href="/partner/store/#cafe"><span class="e">☕</span><div><b>카페 · 음료</b><span>커피 · 음료 · 휴식</span></div><i class="ar">›</i></a>
+<a class="pick" href="/partner/store/#snack"><span class="e">🍱</span><div><b>간식 · 도시락</b><span>사전주문 · 현장 픽업</span></div><i class="ar">›</i></a>
+<a class="pick" href="/partner/store/#goods"><span class="e">🎁</span><div><b>굿즈 · 브랜드</b><span>상품 · 이벤트 · 협업</span></div><i class="ar">›</i></a>
+<a class="pick" href="/partner/store/#locker"><span class="e">🧳</span><div><b>짐보관 · 편의</b><span>보관 · 충전 · 편의서비스</span></div><i class="ar">›</i></a>
+<a class="pick" href="/partner/store/#stay"><span class="e">🏨</span><div><b>숙박 · 관광</b><span>호텔 · 지역 체험</span></div><i class="ar">›</i></a>
+</div></div></section>
+<section class="light-section"><div class="wrap"><div class="section-head"><div class="eyebrow">GOOD TO KNOW</div><h2>시작하기 전에 알아두세요.</h2><p>부담 없이 문을 두드릴 수 있도록, 기본 원칙을 먼저 알려드립니다.</p></div>
+<div class="assure"><div><b>신청은 무료입니다</b>신청서를 남기는 데 비용이 들지 않습니다.</div><div><b>복잡한 계약부터 하지 않습니다</b>이야기를 나눠 본 뒤, 맞는 방식을 함께 정합니다.</div><div><b>정식 오픈 전에는 순차 검토</b>신청해 주신 순서와 지역을 살펴 차례로 연락드립니다.</div></div>
+</div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">

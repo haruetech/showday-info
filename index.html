@@ -255,7 +255,7 @@ h1.headline{font-size:42px;line-height:1.12;letter-spacing:-.035em;max-width:640
 @media(max-width:899px){
   .nav-links{display:flex;gap:0;}
   .nav-links a{display:none;}
-  .nav-links a[href="#partner"]{display:inline-block;white-space:nowrap;font-size:12.5px;font-weight:700;color:var(--amber);border:1px solid var(--line);border-radius:999px;padding:8px 14px;}
+  .nav-links a[href="/partner/"]{display:inline-block;white-space:nowrap;font-size:12.5px;font-weight:700;color:var(--amber);border:1px solid var(--line);border-radius:999px;padding:8px 14px;}
 }
 }
 
@@ -346,6 +346,8 @@ h1.headline{font-size:42px;line-height:1.12;letter-spacing:-.035em;max-width:640
 .partner-type .ico{font-size:25px;margin-bottom:12px;}
 .partner-type b{display:block;font-size:14px;margin-bottom:5px;}
 .partner-type span{font-size:11.5px;color:var(--muted);}
+a.partner-type{display:block;text-decoration:none;color:inherit}
+.partner-type .pt-go{display:block;margin-top:12px;font-style:normal;font-size:11.5px;font-weight:800;color:var(--amber)}
 .partner-form-wrap{
   margin-top:62px;padding:34px;border:1px solid rgba(243,191,85,.28);
   border-radius:22px;background:linear-gradient(145deg,rgba(243,191,85,.07),rgba(255,255,255,.015));
@@ -532,7 +534,7 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
       <a href="/50plus/">50+ 공연</a>
       <a href="/parents/">부모를 위한 공연</a>
       <a href="/live/">쇼데이 라이브</a>
-      <a href="#partner">파트너 안내</a>
+      <a href="/partner/">파트너 안내</a>
     </div>
     <a class="btn btn-amber btn-sm nav-cta" href="#partner-apply">제휴 · 사업 문의 <span>›</span></a>
   </div>
@@ -736,14 +738,14 @@ input,textarea,select{-webkit-user-select:text;user-select:text}
       <h3>어떤 파트너와 함께하나요?</h3>
       <p class="partner-types-lede">지역 매장부터 공연 관계자까지, SHOWDAY의 공연 생태계를 함께 만들 파트너를 기다립니다.</p>
       <div class="partner-type-grid">
-        <div class="partner-type" data-partner="음식점"><div class="ico">🍽️</div><b>음식점</b><span>식사 · 야식 · 공연일 메뉴</span></div>
-        <div class="partner-type" data-partner="카페·음료"><div class="ico">☕</div><b>카페 · 음료</b><span>커피 · 음료 · 휴식</span></div>
-        <div class="partner-type" data-partner="간식·도시락"><div class="ico">🍱</div><b>간식 · 도시락</b><span>사전주문 · 현장 픽업</span></div>
-        <div class="partner-type" data-partner="굿즈·브랜드"><div class="ico">🎁</div><b>굿즈 · 브랜드</b><span>상품 · 이벤트 · 협업</span></div>
-        <div class="partner-type" data-partner="짐보관·편의"><div class="ico">🧳</div><b>짐보관 · 편의</b><span>보관 · 충전 · 편의서비스</span></div>
-        <div class="partner-type" data-partner="숙박·관광"><div class="ico">🏨</div><b>숙박 · 관광</b><span>호텔 · 지역 체험</span></div>
-        <div class="partner-type" data-partner="공연장·기획사"><div class="ico">🎤</div><b>공연장 · 기획사</b><span>공연정보 · 공식공지 · 제휴</span></div>
-        <div class="partner-type" data-partner="기타 제휴"><div class="ico">🤝</div><b>기타 제휴</b><span>지역기관 · 기업 · 협업제안</span></div>
+        <a class="partner-type" href="/partner/store/#food" data-partner="음식점"><div class="ico">🍽️</div><b>음식점</b><span>식사 · 야식 · 공연일 메뉴</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/store/#cafe" data-partner="카페·음료"><div class="ico">☕</div><b>카페 · 음료</b><span>커피 · 음료 · 휴식</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/store/#snack" data-partner="간식·도시락"><div class="ico">🍱</div><b>간식 · 도시락</b><span>사전주문 · 현장 픽업</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/store/#goods" data-partner="굿즈·브랜드"><div class="ico">🎁</div><b>굿즈 · 브랜드</b><span>상품 · 이벤트 · 협업</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/store/#locker" data-partner="짐보관·편의"><div class="ico">🧳</div><b>짐보관 · 편의</b><span>보관 · 충전 · 편의서비스</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/store/#stay" data-partner="숙박·관광"><div class="ico">🏨</div><b>숙박 · 관광</b><span>호텔 · 지역 체험</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/agency/" data-partner="공연장·기획사"><div class="ico">🎤</div><b>공연장 · 기획사</b><span>공연정보 · 공식공지 · 제휴</span><em class="pt-go">제안 보기 ›</em></a>
+        <a class="partner-type" href="/partner/collab/" data-partner="기타 제휴"><div class="ico">🤝</div><b>기타 제휴</b><span>지역기관 · 기업 · 협업제안</span><em class="pt-go">제안 보기 ›</em></a>
       </div>
     </div>
 
@@ -858,12 +860,14 @@ setInterval(() => {
 <script>
 (function(){
   const typeSelect = document.getElementById('partnerType');
-  document.querySelectorAll('.partner-type').forEach(card=>{
-    card.addEventListener('click', ()=>{
-      if(typeSelect) typeSelect.value = card.dataset.partner || '';
-      document.getElementById('partner-apply')?.scrollIntoView({behavior:'smooth',block:'start'});
-    });
-  });
+  // 제안 페이지에서 넘어온 경우 (?type=카페·음료) 문의 유형을 미리 선택합니다.
+  try {
+    const t = new URLSearchParams(location.search).get('type');
+    if (t && typeSelect) {
+      [...typeSelect.options].forEach(o => { if (o.value === t || o.text === t) typeSelect.value = o.value || o.text; });
+      setTimeout(() => document.getElementById('partner-apply')?.scrollIntoView({behavior:'smooth',block:'start'}), 300);
+    }
+  } catch (e) {}
   const form = document.getElementById('showdayPartnerForm');
   form?.addEventListener('submit', async function(e){
     e.preventDefault();
@@ -883,7 +887,7 @@ setInterval(() => {
       });
       const data = await res.json();
       if (data.success) {
-        success.textContent = '신청이 접수되었습니다. 담당자가 확인 후 빠르게 연락드릴게요.';
+        success.textContent = '문의가 접수되었습니다. 담당자가 확인 후 빠르게 연락드릴게요.';
         success.style.display = 'block';
         form.reset();
       } else {
